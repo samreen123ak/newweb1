@@ -1,0 +1,372 @@
+
+
+
+.main1{
+  background-color: #4071B6;
+  height: 520px;
+  display: flex;
+}
+
+/*-----------------------------------------------------*/
+
+.side-by-side {
+  width: 50%;
+  height: 100%;
+  display: inline;
+  padding-left: 80px;
+  padding-top: 100px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.side-by-side p{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-right: 78px;
+}
+
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.main1 img{
+  width: 450px;
+  height: 450px;
+  padding-top: 50px;
+  margin-right: 150px;
+}
+
+.mainbutton {
+    display: flex;
+    font-size: 12px;
+}
+
+.button1{
+    background-color: #ffffff;
+    color: #000000; 
+    border: 0px solid #000000;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .button2{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white; 
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+  }
+
+
+  .titlemain2
+  {
+      text-align: center;
+      font-weight: bold;
+      padding-top: 40px;
+      font-size: 40px;
+      background-color: #F9FAFC;
+
+
+  }
+
+
+
+  .main2{
+    position: relative;
+  }
+
+  .insidemain2{
+    position:absolute;
+  }
+
+
+.main2{
+  background-color: #F9FAFC;
+  height: 520px;
+  display: flex;
+}
+
+.main2-1{
+  width: 700px;
+}
+
+.main2-1 img{
+  width: 550px;
+  height: 500px;
+  padding-left: 5px;
+  padding-top: 70px;
+}
+
+
+.container {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 13px;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/*styles.css */
+
+.arrow {
+  position: absolute;
+  bottom: 2px;
+  right: 50%;
+  transform: translateX(70%);
+  font-size: 20px;
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.main2-1 img {
+  width: 550px;
+  height: 472px;
+  padding-left: 4px;
+  padding-top: 12px;
+  animation: slideInFromLeft 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+/*------------------------------------------------------------------*/
+
+
+
+/* Styles for the box on hover */
+.box:hover {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  z-index: 1; /* Ensure the zoomed-in box appears on top of other elements */
+  box-shadow: #000000;
+}
+
+/* Styles for the arrow when the box is hovered */
+.box:hover .arrow {
+  position: absolute;
+  right: 7px;
+  transition: opacity 0.40s ;
+}
+
+
+.main2-3{
+  background-color: #ffffff;
+  height: 520px;
+}
+
+.main2-3_title{
+color: #000000;
+font-weight: bold;
+padding-top: 60px;
+font-size: 30px;
+margin-left: 36px;
+}
+
+
+.main2-3_maindata{
+  display: flex;
+}
+
+
+.main2-3_maindata-1{
+  padding-left: 40px;
+  align-items: center;
+}
+
+
+.main2-3_maindata-2{
+  width: 50%;
+  position: relative;
+}
+
+.main2-3_maindata-1-1{
+  display: flex;
+  margin-top: 30px;
+}
+
+.main2-3_maindata-1-1-image{
+  width: 90px;
+}
+
+.main2-3_maindata-1-1-data{
+  font-size: 15px;
+  width: 265px;
+}
+
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-in-out {
+  width: 200px; /* Set the initial width of the image */
+  height: 200px; /* Set the initial height of the image */
+  animation: zoomInOut 4s infinite; /* Adjust the duration as needed */
+}
+
+
+
+.image5{
+  position: absolute;
+  top:  -9px;
+  right: -116px;
+  width: 200px; /* Set the initial width of the image */
+  height: 200px; /* Set the initial height of the image */
+  animation: zoomInOut 4s infinite; /* Adjust the duration as needed */
+}
+
+.image6{
+  position: absolute;
+  top: -87px;
+  right:-87px;
+  width: 200px; /* Set the initial width of the image */
+  height: 200px; /* Set the initial height of the image */
+  animation: zoomInOut 4s infinite; /* Adjust the duration as needed */
+}
+
+
+.main4{
+  background-color: #F9FAFC;
+  height: 400px;
+}
+
+
+.main4-arrow{
+    font-size: 30px;
+    padding-left:615px;
+}
+
+.main4-title{
+  font-size: 30px;
+  padding-left:580px;
+  padding-top: 15px;
+}
+
+
+.main4-data{
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+
+
+.image-container {
+  width: 298px;
+  height: 253px;
+  margin: 45px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+}
+
+
+
+
+.Main5div {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding-top: 60px;
+  margin-left: 85px;
+}
+
+.logos {
+  display: flex;
+  margin: 50px;
+}
+
+.logos > div {
+  margin: 0 10px; /* Adjust the margin to create equal space between images */
+}
+
+/* Additional styling for the title */
+.Main5div > div > div {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left:-48px
+}
+
+
+.displaylogos{
+  display: flex;
+
+}
